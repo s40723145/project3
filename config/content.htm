@@ -13,7 +13,13 @@
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>原文書內容</h1>
+<h1>機構繪製</h1>
+<p>Jansen'slinkage</p>
+<p>Klann linkage</p>
+<p>Eight-bar linkage</p>
+<p>Ten-bar linkage</p>
+<p></p><h2>Eight-bar linkage</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/PZlLNpAz5H4" width="500"></iframe></p><h1>原文書內容</h1>
 <h2>膝關節替代物之運動測試儀</h2>
 <p><a href="/downloads/Kinematic_Tester_for_Knee_Replacements_-_MQP_2015.pdf">/downloads/Kinematic_Tester_for_Knee_Replacements_-_MQP_2015.pdf</a></p>
 <p></p>
@@ -29,7 +35,13 @@
 <p><br/>8 Prototype Construction (p51)<br/>8.1 Frame Construction (p51)<br/>8.2 Motor and Electrical Components (p53)<br/>8.3 Femur and Tibia Subassembly Construction (p54)<br/>8.4 Linkage Construction  (p56)<br/>8.5 Alterations to the Final Prototype Design (p58)</p>
 <p><br/>9 Prototype Testing (p63)</p>
 <p><br/>10 Conclusions (p69)</p>
-<p><br/>11 Future Recommendations (p70)<br/>11.1 Allow the Mechanism to be Completely Customizable per Patient(p70)<br/>11.2 Apply Sensors to the Mechanism (p70)<br/>11.3 Apply Accurate Forces on the Knee Replacement (P70)<br/>11.4 Recommendations for Ordering Components (71)<br/>11.5 Improving Upon the Frame (p71)<br/>11.6 Drafting  (p73)<br/>11.7 Alternate Axle Components for Use in Pin Joints  (p74)<br/>11.8 Possible Alternative Designs (p77)</p><h3>Chapter7細部設計</h3>
+<p><br/>11 Future Recommendations (p70)<br/>11.1 Allow the Mechanism to be Completely Customizable per Patient(p70)<br/>11.2 Apply Sensors to the Mechanism (p70)<br/>11.3 Apply Accurate Forces on the Knee Replacement (P70)<br/>11.4 Recommendations for Ordering Components (71)<br/>11.5 Improving Upon the Frame (p71)<br/>11.6 Drafting  (p73)<br/>11.7 Alternate Axle Components for Use in Pin Joints  (p74)<br/>11.8 Possible Alternative Designs (p77)</p>
+<h3>Chapter4設計概念</h3>
+<p></p>
+<p><strong>4.1概念1-Hrones和Nelson Sixbar</strong><br/><strong>4.1.1概念概述</strong></p>
+<p>第一個被考慮的設計是使用一個連桿來驅動腳踝沿著已知的路徑運動，通過精確的步態驅動脛骨和股骨連接。<br/> Hrones 與 Nelson創造了各種各樣的耦合桿曲線，包含了四桿的集合。<br/>這種設計使用了一個四桿，它的<span>耦合點</span>曲線非常類似於腳踝路徑。<br/>脛骨連接到耦合點，耦合點在代表膝蓋的節點處連接到股骨連接點，而股骨連接點固定在代表臀部的接地節點上，則由此產生的為六連桿。<br/>下面圖20中，說明了這個概念。</p>
+<p><img alt="" height="204" src="/images/ch4.figure20.png" width="300"/><br/>Link 1表示地面鏈路。<br/>Link 2表示由馬達驅動的曲柄。<br/>Link 3是驅動腳踝的耦合器，由節點C表示。<br/>Link5和6分別表示脛骨和股骨。<br/>節點D和O3表示，分別是膝關節和髖關節。</p>
+<p>為了確保這個設計只有一個自由度，它的機動性必須等於一個自由度。<br/>為了驗證這一點，使用自由度方程並代入該連桿所包含的連桿和關節的數量。<br/>這個概念有六個連桿和七個完整的關節。因此，計算出自由度 𝑀:<br/>𝑀 = 3 ∗ (6 − 1) − 2 ∗ (7) − 1 ∗ (0) = 1<br/>由於這個連桿有一個自由度，它只能遵循一條可預測的路徑。<br/>這對於這個項目來說是成立的，因為如果腳踝在自然步態中遵循一個類似於人的曲線，那麼膝蓋也應該遵循它的自然運動。<br/>為了利用這一概念重建人類步態，需要5個數據:<br/>1.走路時腳踝的曲線<br/>2.脛骨的長度<br/>3.股骨的長度<br/>4.步長<br/>5.臀部與腳踝曲線的相對位置。</p><h3>Chapter7細部設計</h3>
 <p>主旨:<span>在本章節中，將會詳細介紹原型最終設計，包括連趕機構、膝蓋義肢、機架、馬達。</span></p>
 <p><br/><strong><span style="color: #000000;">7-1聯動機構(p36-p37)</span></strong></p>
 <p>目的在於滿足膝蓋關節與大腿骨擺動之角位移，根據Solidworks相對於水平的運動分析，(圖35)顯示大腿骨接近50度(27-(-23)=50)。</p>

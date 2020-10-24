@@ -133,59 +133,12 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Chapter4設計概念 << <a href='Chapter4設計概念.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料<br /><h1>Chapter7細部設計</h1>
-<p>主旨:<span>在本章節中，將會詳細介紹原型最終設計，包括連趕機構、膝蓋義肢、機架、馬達。</span></p>
-<p><br/><strong><span style="color: #000000;">7-1聯動機構(p36-p37)</span></strong></p>
-<p>目的在於滿足膝蓋關節與大腿骨擺動之角位移，根據Solidworks相對於水平的運動分析，(圖35)顯示大腿骨接近50度(27-(-23)=50)。</p>
-<p>(圖36)顯示膝蓋位移68度(180-112=68)，依照人類站立時膝蓋會有25度小幅度彎曲，在擺動桿件狀態(參考圖5)步態前為較大65-70度。</p>
-<p><br/>然而，此機構無法重現最初25度之小幅度彎曲，有可能是因為西奧。詹森機構近乎於近諧波運動，膝蓋則沒有。</p>
-<p>上(圖35)為機械大腿骨擺動角位移，下(圖36)為大腿骨與脛骨(小腿骨位於內側，形狀為三角柱狀)之角位移</p>
-<p>此機構採2/3之比例，為了保持預算和生產機構不超出範圍，表5列出鍊條長度，每鏈接之詳細說明圖可在附錄B中查看。</p>
-<p><br/>表5:最終鏈接的2/3比例鏈接長度。</p>
-<p><strong></strong></p>
-<p><strong>7-2膝蓋關節換置</strong></p>
-<p><strong></strong></p>
-<p><strong>7-2-1 3D列印物件(p37)</strong></p>
-<p>大多數使用TKR(全人工膝關節置換)之技術，由於團隊無法實際獲得TKR，因此使用MakerBot的Thingiverse，Thingiverse是一個設計共同體為製作與共享3D列印物件。<br/>我們發現從3D掃描創建出膝關節置換模型。模型包括大腿骨零件、脛骨、塑料墊片，透過CT掃描將之建模，切割並組裝各膝蓋關節。</p>
-<p>TKR需要SolidWorks縮放尺寸為正常人類大小，團隊使用來自Elsner等人的研究，是使用118人去測量、分析，解剖骨骼植入並匹配大小正確的膝關節換置，附錄B顯示3D列印零件之各個尺寸。</p>
-<p>此外，大腿骨、脛骨修飾使連桿機構容納適合附屬件，切割骨頭末端、在銼刀上打孔以允許螺釘將3D列印零件連接大腿骨、脛骨鏈接。下圖37顯示切割與SolidWorks模組中大腿骨零件上的孔洞。</p>
-<p><br/>圖37：用於3D列印的大腿骨SolidWorks之模型(副檔名為.stl)。</p>
-<p><br/><br/><strong>7-2-2 膝關節換置、安裝(p38)</strong></p>
-<p>研究團隊判斷最好的連接膝蓋部位的方法是將膝蓋部位分開在一個平面機構上。</p>
-<p>四個六角形支腳固定於膝蓋替代物連接到大腿骨和脛骨鏈接的機構中(圖38)，六角形固定連接在80/20片上，由兩個螺栓固定於兩端的板子，使保持3D列印骨骼之操作。</p>
-<p><br/>圖38：大腿骨和脛骨的連接鏈接之機構</p>
-<p><br/><br/><strong>7-2-3 關節(p39-p40)</strong></p>
-<p>此機構使用螺絲柱（圖39）作為銷接頭將鏈節連接在一起。節點三藉由長桿半螺紋內六角螺釘連接在地面上。</p>
-<p>圖39：範例為在Grainger網路商城中的一根螺絲柱（也稱為接線柱）。</p>
-<p>當研究團隊將大腿骨和脛骨鏈接連接到SolidWorks的最終機構時，發現大腿骨和部分脛骨會相互抵觸（如圖40）。</p>
-<p>圖40 ：（左圖）與大腿骨和脛骨的連接點相近於180度。 <br/> （右圖）與大腿骨和脛骨的連接角度，導致大腿骨與脛骨元件之間相互抵觸。</p>
-<p><br/>為了解決此干涉問題，一個插槽替換了鏈接12上的接頭（圖41）。<br/>插槽確定最大尺寸為0.875英吋。</p>
-<p>以不相互抵觸為前提，脛骨與大腿骨鏈接要大於最小所需距離並在另一個最大干涉之位置上。</p>
-<p>圖41：大腿骨鏈接的插槽點可防止干涉。</p>
-<p><br/><br/></p>
-<p><strong>7-2-4肌腱和韌帶(p41)</strong></p>
-<p><br/>為了在週期中幫助膝蓋替換零件保持在一起，脛骨鏈接由於重力因此不會待在插槽底部，為了還原原型，將膝蓋骨和股四頭肌肌腱的模組隨著前後十字韌帶連接到3D列印骨骼組件(圖42)</p>
-<p>重建肌腱與韌帶使用可以承受一磅力的橡皮筋。<br/>添加肌腱與韌帶助於膝蓋替換零件共同在一起，將會創建滾滑接頭，橡皮筋會被連接在80/20的T型擠型。</p>
-<p>圖42:紅線表示為模擬肌腱、韌帶的橡皮筋所在處(左)十字韌帶(ACL程式語言學協會 and PCL列印控制表)，(右)髕腱與股四頭肌肌腱。<br/> <br/>整體來說，此機構有一個自由度(DOF)，並有12根桿件，15個全關節和2個半關節。<br/>一個半關節是插槽、第二個半關節是滾滑接頭從肌肉、韌帶創建而來。<br/>因此，接續採用自由度方程式計算機動性。</p>
-<p><br/><strong>關鍵字:</strong></p>
-<ul style="list-style-type: disc;">
-<li>rubber bands = 橡皮筋</li>
-<li>ligaments = 韌帶</li>
-<li>tendons = 肌腱</li>
-<li>attached = 連接；附上</li>
-<li>extrusions with t-nuts = T型擠型(製作固定截面形狀的物體)</li>
-<li>cruciate ligaments = 十字韌帶</li>
-<li>patellar = 髌腱(位於連接膝蓋骨與小腿脛骨之間的肌腱)</li>
-<li>quadriceps tendons = 股四頭肌肌腱</li>
-<li>mechanism = 機構</li>
-<li>joints = 關節(有分全跟半)；接頭</li>
-<li>roll-slide joint = 滾滑接頭</li>
-<li>mobility = 流動性；可動性</li>
-<li>calculated = 計算的</li>
-<li>equation = 方程式</li>
-<li>followed = 接續；跟隨</li>
-<li>evolutional = 進化的</li>
-</ul><br />Chapter4設計概念 << <a href='Chapter4設計概念.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料</div>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='Eight-bar linkage.html'>Next</a> >> Eight-bar linkage<br /><h1>機構繪製</h1>
+<p>Jansen'slinkage</p>
+<p>Klann linkage</p>
+<p>Eight-bar linkage</p>
+<p>Ten-bar linkage</p>
+<p></p><br />Develop << <a href='Develop.html'>Previous</a> <a href='Eight-bar linkage.html'>Next</a> >> Eight-bar linkage</div>
         
     <!-- footer -->
       <div class="container">
