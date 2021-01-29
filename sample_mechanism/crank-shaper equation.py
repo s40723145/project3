@@ -67,8 +67,8 @@ def crank_shaper_stroke_vel():
     # pprint(stroke_vel_theta)
 
     
-    for i in range(0, 360, 10):
-        stroke_vel_theta= stroke_vel_theta.subs([(r3, 35), ()])
+    #for i in range(0, 360, 10):
+        #stroke_vel_theta= stroke_vel_theta.subs([(r3, 35), ()])
     
 
 
@@ -86,14 +86,14 @@ def show_img():
     for i in range(0, 361, 10):
         y_list.append(i)
 
-    self_img = plt.imread("crank shaper self.png")
+    self_img = plt.imread("D:\project3\sample_mechanism\crank shaper self.png")
     plt.subplot(1, 2, 1,)
     # plt.plot(y_list, crank_shaper_stroke_pos())
     plt.imshow(self_img)
     plt.title("self-derived")
     plt.axis("off")
     
-    pyslvs_img = plt.imread("crank shaper p3 pyslvs.png")
+    pyslvs_img = plt.imread("D:\project3\sample_mechanism\crank shaper p3 pyslvs.png")
     plt.subplot(1, 2, 2)
     plt.imshow(pyslvs_img)
     plt.title("pyslvs")
@@ -105,7 +105,7 @@ def show_img():
 if __name__ == "__main__":
     # print(crank_shaper_theta3())
     # print(crank_shaper_stroke_pos())
-    # show_equation()
-    # show_img()
+    show_equation()
+    show_img()
     crank_shaper_stroke_vel()
-    crank_shaper_stroke_acc()
+    #crank_shaper_stroke_acc()
